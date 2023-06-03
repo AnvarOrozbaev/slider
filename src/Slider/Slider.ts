@@ -29,6 +29,7 @@ export class Slider {
     this.interval = null;
     this.init();
   }
+  
   validateSlider() {
     if (!this.app) {
       throw new Error(`Element with selector ${this.root} not found`);
@@ -37,11 +38,13 @@ export class Slider {
       throw new Error(`missing property slides`);
     }
   }
+
   init() {
     this.validateSlider();
     this.render();
     this.moveSlide();
   }
+
   render() {
     this.container.setAttribute('id', this.root);
     this.app?.append(this.container);
@@ -74,9 +77,7 @@ export class Slider {
         return;
       }
     }
-    this.wrapper.style.transform = `translateX(-${
-      this.slideIndex * this.width
-    }px)`;
+    this.wrapper.style.transform = `translateX(-${this.slideIndex * this.width}px)`;
     this.slideIndex++;
   }
 }
