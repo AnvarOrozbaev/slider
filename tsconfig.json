@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "dom"
+    ], 
+    "removeComments": true, 
+    "target": "ES6", 
+    "baseUrl": "." ,
+    "paths": {
+      "@/*": ["src/*"]
+    }, 
+  },
+  "include": ["./**/*.ts"],
+  "exclude": [
+    "node_modules/**/*"
+  ]
+}
