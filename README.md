@@ -1,6 +1,6 @@
 ## Установка
-  `` npm run install ``
-  
+  `` npm install ``
+
 ## Запуск
 
   `` npm run start ``
